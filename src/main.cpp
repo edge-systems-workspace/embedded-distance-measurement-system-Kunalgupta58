@@ -51,4 +51,18 @@ void loop() {
 
     // TODO 11: Measure pulse duration on ECHO
     duration = pulseIn(ECHO_PIN, HIGH);
+   
+
+    // TODO 12: Calculate distance in cm
+    distance = duration * 0.034 / 2;
+
+    // TODO 13: Print calculated distance
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+
+    Serial.println("---------------------------------");
+
+    // TODO 14: Add delay
+    delay(500);
 }
